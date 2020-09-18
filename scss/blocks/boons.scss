@@ -1,0 +1,93 @@
+.boons{
+  padding-top: 1px;
+  background-color: #1a1c1e;
+  padding-bottom: 80px;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+
+  &__item-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  &__background-image{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+    text-align: center;
+
+    img{
+      display:  inline-block;
+      width: 30%
+    }
+  }
+
+  &__item{
+    margin-top: 40px;
+    display: table;
+  }
+
+  &__icon{
+    padding-top: 8px;
+    display: table-cell;
+    width: 90px;
+
+    img{
+      height: 90%;
+    }
+  }
+
+  &__text-wrapper{
+    padding-left: 20px;
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  &__title{
+    font-size: 20px;
+    max-width: 350px;
+  }
+
+  &__description{
+    margin-top: 20px;
+  }
+
+  &__image{
+    display: block;
+    max-width: 700px;
+    margin: 40px auto;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    &__item-list{
+      display: block;
+    }
+  }
+
+  @media (max-width: 800px) {
+    &__item{
+      display: block;
+    }
+
+    &__text-wrapper{
+      display: block;
+      padding-left: 0;
+      margin-top: 10px;
+    }
+
+    &__icon{
+      margin: auto;
+      display: inline-block;
+    }
+  }
+}

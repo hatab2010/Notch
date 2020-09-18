@@ -1,0 +1,123 @@
+.slider {
+  background-color: #232527;
+  width: 100%;
+  overflow: hidden;
+  position:  relative;
+
+  &__item-list{
+    transition: margin-left ease-in-out 0.8s;
+    position: relative;
+    display: flex;
+    width: fit-content;
+  }
+
+  &__item {
+    transition: opacity ease-in-out 0.8s;
+    height: 600px;
+    position: relative;
+    width: 1200px;
+    opacity: 0.4;
+    overflow: hidden;
+
+    &--active{
+      opacity: 1;
+
+      .slider__text-wrapper{
+        opacity: 1;
+      }
+    }
+  }
+
+  &__text-wrapper{
+    transition: all ease-in-out 0.8s;
+    opacity: 0;
+    padding: 20px;
+    background-color: rgba(0,0,0, 0.7);
+    position: absolute;
+    bottom: 65px;
+    width: 80%;
+    left: 40px;
+    color: white;
+    z-index: 1;
+  }
+
+  &__title{
+    color: #fc6430;
+    font-weight: 900;
+    font-size: 30px;
+  }
+
+  &__description{
+    margin-top: 15px;
+    line-height: 140%;
+  }
+
+  &__buttons-wrapper
+  {
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    bottom: 0px;
+    max-width: 1200px;
+    text-align: right;
+    box-sizing: border-box;
+  }
+
+  &__button{
+    cursor: pointer;
+    transition: all ease-in-out 0.4s;
+    display: block;
+    float: right;
+    background: #313436 url("/assets/images/icons/point-to__left.png") no-repeat center center;
+    background-size: 23%;
+    border-radius: 4px;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+
+    &:hover{
+      background-color: #ff4000;
+    }
+
+    &--left{
+
+    }
+
+    &--right{
+      transform: rotate(180deg);
+    }
+  }
+
+  &__image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+
+    img{
+      min-height: 100%;
+      min-width: 100%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+
+    &__text-wrapper{
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: initial;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &__item{
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+}

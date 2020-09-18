@@ -1,0 +1,16 @@
+.best{
+  text-align: center;
+  padding-bottom: 80px;
+  background-color: #232527;
+
+  &__image{
+    width: 100%;
+    margin-top: 40px;
+
+    img{
+      width: 80%;
+      display: block;
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.card {
+  text-align: left;
+
+  &__title {
+    margin-top: 20px;
+    font-size: 18px;
+    color: black;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__description {
+    margin-top: 20px;
+  }
+
+  &__image {
+    width: 100%;
+
+    &:nth-child(2) {
+      margin-top: 20px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__image-label{
+    margin-top: 10px;
+  }
+
+  &--font-size {
+    &--large {
+      .card {
+        &__title {
+          font-size: 28px;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+
+  &--theme {
+    &--dark {
+      .card {
+        &__description {
+          color: #343434;
+        }
+
+        &__title {
+          color: black;
+          font-weight: 300 !important;
+        }
+      }
+    }
+
+    &--white {
+      .card {
+        &__description {
+        }
+
+        &__title {
+          color: white;
+        }
+      }
+    }
+  }
+}

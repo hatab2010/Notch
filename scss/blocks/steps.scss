@@ -1,0 +1,149 @@
+.steps{
+  background-color: white;
+  padding-bottom: 80px;
+  text-align: center;
+
+  &--offset{
+    &--custom{
+      .steps__item {
+
+      }
+    }
+  }
+
+  &--theme{
+    &--custom-steps-image{
+      .steps{
+        &__item{
+          margin-top: 400px;
+
+          &:nth-child(2){
+            .steps__image{
+              width: 100%;
+
+              img{
+                width: 140%;
+              }
+            }
+          }
+        }
+
+        &__image{
+          width: 100%;
+
+          img{
+            width: 50%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%,-100%);
+          }
+        }
+      }
+
+      @media (max-width: 800px) {
+        .steps{
+          &__item{
+            margin-top: 20px;
+
+            &:nth-child(2){
+              .steps__image{
+
+                img{
+                  max-width: 250px;
+                }
+              }
+            }
+          }
+
+          &__image{
+            position: relative;
+            width: 100%;
+            display: block;
+            height: fit-content;
+            transform: initial;
+
+            img{
+              transform: initial;
+              position: relative;
+              left: 0;
+              max-width: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__title{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    opacity: 0.9;
+    margin-bottom: 0;
+
+    &:first-child{
+      font-size: 40px;
+      font-weight: 300;
+    }
+  }
+
+  &__text-wrapper{
+    margin-top: 20px;
+  }
+
+  &__item{
+    position: relative;
+    text-align: left;
+
+    &:first-child, &:nth-child(3){
+      .steps__image{
+      }
+    }
+  }
+
+  &__icon{
+    padding-right: 15px;
+    vertical-align: middle;
+    display: table-cell;
+  }
+
+  &__sub-title{
+    font-size: 18px;
+    height: 40px;
+    vertical-align: middle;
+    color: black;
+    display: table-cell;
+  }
+
+  .button{
+    margin-top: 40px;
+  }
+
+  &__down-title{
+    color: #1d1f21;
+    font-weight: 300;
+  }
+
+  &__description{
+    text-align: left;
+    color: #343434;
+    margin-top: 20px;
+  }
+
+  &__item-list{
+    margin-top: 40px;
+    column-gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 800px) {
+
+    &__item-list{
+      grid-template-columns: 1fr;
+    }
+  }
+
+}

@@ -1,0 +1,25 @@
+.triangle{
+  z-index: 1;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 55px solid red;
+  border-right: 65px solid transparent;
+  width: 0;
+  height: 0;
+
+  &--color{
+    &--asphalt{
+      border-top-color: #1a1c1e;
+    }
+
+    &--ash{
+      border-top-color: #232527;
+    }
+
+    &--white{
+      border-top-color: white;
+    }
+  }
+}

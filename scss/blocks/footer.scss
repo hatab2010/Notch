@@ -1,0 +1,48 @@
+.footer {
+  padding-bottom: 40px;
+  padding-top: 80px;
+  background-color: #1a1c1e;
+  text-align: center;
+
+  &__logo {
+
+    img{
+      max-width: 300px;
+      min-width: 100px;
+    }
+  }
+
+  &__separator {
+    margin-top: 40px;
+  }
+
+  &__description{
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  &__sub-title{
+    text-align: left;
+    max-width: 700px;
+    margin: 40px auto 0;
+    font-size: 20px;
+  }
+
+  &__title {
+    margin-top: 10px;
+  }
+
+  &__container{
+
+  }
+
+  &__info{
+    margin-top: 40px;
+    color: #818388;
+    font-size: 15px;
+
+    a{
+      color: #ff4000;
+    }
+  }
+}

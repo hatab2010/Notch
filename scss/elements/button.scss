@@ -1,0 +1,39 @@
+.button{
+  cursor: pointer;
+  background-color: #46494c;
+  height: 50px;
+  font-size: 13px;
+  padding: 0 20px 0 20px;
+  line-height: 50px;
+  font-weight: 300;
+  display: inline-block;
+  color: white;
+
+  &--size{
+    &--small{
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 40px;
+      height: 40px;
+    }
+  }
+
+  &:hover{
+    background-color: #fc6430;
+  }
+
+  &--color{
+    &--orange{
+      background-color: #ff4000;
+    }
+
+    &--transparent{
+      border: solid 1px white;
+      background-color: rgba(255, 255, 255, 0.2);
+
+      &:hover{
+        background-color: rgba(255, 255, 255, 0.4);
+      }
+    }
+  }
+}
